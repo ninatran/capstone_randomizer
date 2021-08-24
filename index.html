@@ -5,16 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e818422a8e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-  <button onclick="randomize()">Randomize!</button>
+    <div class="mainwrapper">
+      <header>
+         <div class="topnav" id="myTopnav">
+           <a href="#home" class="active">Home</a>
+           <a href="#contact">Contact</a>
+           <div class="dropdown">
+    <button class="dropbtn">Helpful Links
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://imagecolorpicker.com/" target="_blank">Image Color Picker</a>
+      <a href="https://www.w3schools.com/default.asp#" target="_blank">W3 Schools</a>
+      <a href="https://frontendchecklist.io/" target="_blank">Front End Checklist</a>
+      <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+      <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+       <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+         <a href="https://codepen.io/your-work" target="_blank">CodePen</a>
+
+    </div>
+  </div>
+  <div class="logo"> <img src="https://i.ibb.co/5kYH0Nb/new-ff-logo-horiz-2.webp" alt="Logo"/></a></div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-<div>
-  <h1>Business:</h1>
-  <h2 id="business"></h2>
+</header>
+<br>
+<div class="jumbotron">
+  <div class="container">
+
+    <h1>Capstone Randomizer </h1>
+  </div>
 </div>
-<div>
+<br>
+<div class="mcontent">
+<div class="assignment">
+  <h1> The Capstone Randomizer </h1>
+  <h4> The details below will assist you with finding a capstone idea, relative website wireframes, color schemes, and stock photos. Also check the links above for many more websites that can help you have the best capstone possible. </h4>
+
+
+</div>
+
+<br>
+<div class="wrap">
+  <button class="rbutton"onclick="randomize()">Randomize!</button>
+</div>
+<br>
+<div class="randomizer">
+<div class="bcards">
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h2 id="business"></h2>
+      <h1>Client: </h1>
+      <h2 id="client"></h2>
+      </div>
+</div>
+<div class="column">
+  <div class="card">
+    <h2 id="resource"> Test Text </h2>
+</div>
+</div>
+</div>
+</div>
+
+<div class="colorboxes">
   <h1>Color Scheme:</h1>
   <div id="colors">
     <div id="color0" class=colorbox></div>
@@ -23,20 +83,26 @@
     <div id="color3" class=colorbox></div>
   </div>
 </div>
-<div id=stock>
-  <h1>Stock Images:</h1>
+<div class="stockphotos">
+<div class="picrow">
+
+<div id=stock></div>
+
+
+
 </div>
+</div>
+
+
 <div>
   <h1>Wireframe(s):</h1>
   <img class="wf" src="" alt="">
   <img class="wf" src="" alt="">
 </div>
 
-<div>
-  <h1>Client: </h1>
-  <h2 id="client"></h2>
-</div>
-
+</div> <!--randomizer div-->
+</div> <!--mcontent div-->
+</div> <!-- main wrapper div -->
 <script src="sample_data.js" charset="utf-8"></script>
 <script src="script.js" charset="utf-8"></script>
 
